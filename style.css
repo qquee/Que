@@ -5,7 +5,6 @@
 
 body {
     width: 100%;
-    height: 100vh;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/background.jpg);
     background-position: center ;
     background-color: #000;
@@ -20,7 +19,7 @@ body {
  
 }
 
-a{
+.navbar a{
     font-family:'roboto', sans-serif;
     font-weight: bold;
     font-size: 12px;
@@ -33,7 +32,7 @@ a{
    
 }
 
-a:hover{
+.navbar a:hover{
     background:darkgoldenrod;
     color: white;
     padding-right:5px;
@@ -59,43 +58,174 @@ li{
 
 .navbar .links{
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 }
 
-@media (max-width: 992px) {
-    .navbar .links,
 
-}
-
-h6{
-    color: rgb(124, 92, 10);
-    font-size: 100px;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: px;
-    width: 100%;
-}    
-
-.paragraph{
+ #hero {
     text-align: center;
-    padding-top: 18%;
-}
-
-p{
-    color:#878a85;
-    font-size: 50px;
-    font-weight: bold;
-    padding-bottom: 6%;
+    padding: 100px 0;
+    color: #e6dbcd;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    
 }
 
-p1{
-    color:#878a85;
-    font-size: 12px;
+h1{
+  font-size: 80px;
+}
+  
+  .cta-btn {
+    display: inline-block;
+    background-color: rgb(107, 121, 76);
+    color: #1e1f1d;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+  
+  .cta-btn:hover {
+    background-color: #5c5140;
+    color: #c1c9c1;
+    padding-right:5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+   
+   .facebook-icon {
+ 
+    padding: px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: px;
+    border-radius: 10%;
+    font-size: 20px;
+}
+  
+  .instagram-icon {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: px;
+    border-radius: 10%;
+    font-size: 20px;
+
+}
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+  
+  .photo img {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+
+    
+}
+
+  section{
+    color: #eeecea;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large; 
+    padding-left: 10% ;
+    padding-right: 10%;
+   
+}
+
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #eee1e12d;
+}
+  
+  input[type="submit"] {
+    color: #a54b0ce1;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     font-weight: bold;
-    width: 80%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style: oblique;
+    background-color: #212521;
 }
+  
+  input[type="submit"]:hover {
+    background-color: #a54b0ce1;
+    color: #212521;
+}
+  
+
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40%;
+
+}
+  
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+    
+    h2 {
+      font-size: 20px;
+    }
+    
+    .cta-btn {
+      font-size: 14px;
+    }
+    
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+  @media (max-width: 480px) {
+    header nav {
+      justify-content: center;
+    }
+    
+    #hero {
+      padding: 60px 0;
+    }
+    
+    h1 {
+      font-size: 24px;
+    }
+    
+    h2 {
+      font-size: 18px;
+    }
+    
+    .cta-btn {
+      font-size: 12px;
+    }
+    
+    form {
+      max-width: 300px;
+    }
+}
+  
+
+
 
